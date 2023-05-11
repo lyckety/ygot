@@ -466,13 +466,18 @@ func addNonChoiceChildren(m map[string]*yang.Entry, e *yang.Entry, errs []error)
 // defined in the map. When the key k is defined in the map an error is appended
 // to errs, which is subsequently returned.
 func addNewChild(m map[string]*yang.Entry, k string, v *yang.Entry, errs []error) []error {
-	dup, ok := m[k]
-	if !ok {
+	if _, ok := m[k]; !ok {
 		m[k] = v
-		return errs
+	} else {
+		newK := k + "_"
+
+		m[newK] = v
 	}
-	errs = append(errs, fmt.Errorf("%s was duplicate with %s", v.Path(), dup.Path()))
+
 	return errs
+
+	// errs = append(errs, fmt.Errorf("%s was duplicate", v.Path()))
+	// return errs
 }
 
 // TransformEntry makes changes to the given AST subtree returned by goyang
