@@ -11,7 +11,7 @@ Imported modules were sourced from:
 package ocstructs
 
 import (
-	"github.com/openconfig/ygot/ygot"
+	"github.com/lyckety/ygot/ygot"
 )
 
 // DevicePath represents the /device YANG schema element.
@@ -41,7 +41,7 @@ func (n *DevicePath) Parent() *ParentPath {
 	}
 }
 
-// RemoteContainer (container): 
+// RemoteContainer (container):
 // ----------------------------------------
 // Defining module: "openconfig-remote"
 // Instantiating module: "openconfig-simple"
@@ -67,7 +67,7 @@ type ParentPathAny struct {
 	*ygot.NodePath
 }
 
-// Child (container): 
+// Child (container):
 // ----------------------------------------
 // Defining module: "openconfig-simple"
 // Instantiating module: "openconfig-simple"
@@ -83,7 +83,7 @@ func (n *ParentPath) Child() *Parent_ChildPath {
 	}
 }
 
-// Child (container): 
+// Child (container):
 // ----------------------------------------
 // Defining module: "openconfig-simple"
 // Instantiating module: "openconfig-simple"

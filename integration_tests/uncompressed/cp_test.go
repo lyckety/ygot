@@ -17,14 +17,14 @@ package uncompressed
 import (
 	"testing"
 
-	"github.com/openconfig/ygot/integration_tests/uncompressed/cschema"
-	"github.com/openconfig/ygot/integration_tests/uncompressed/uschema"
-	"github.com/openconfig/ygot/ygot"
+	"github.com/lyckety/ygot/integration_tests/uncompressed/cschema"
+	"github.com/lyckety/ygot/integration_tests/uncompressed/uschema"
+	"github.com/lyckety/ygot/ygot"
 )
 
 // TestLeafref tests referencing between two lists using relative paths
 // in compressed and uncompressed schemas. Previously, a bug was found
-// in this behaviour in https://github.com/openconfig/ygot/issues/185.
+// in this behaviour in https://github.com/lyckety/ygot/issues/185.
 func TestLeafref(t *testing.T) {
 	tests := []struct {
 		name    string

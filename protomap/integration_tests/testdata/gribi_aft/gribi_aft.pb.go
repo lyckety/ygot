@@ -18,8 +18,8 @@ package gribi_aft
 
 import (
 	enums "github.com/openconfig/gribi/v1/proto/gribi_aft/enums"
-	_ "github.com/openconfig/ygot/proto/yext"
-	ywrapper "github.com/openconfig/ygot/proto/ywrapper"
+	_ "github.com/lyckety/ygot/proto/yext"
+	ywrapper "github.com/lyckety/ygot/proto/ywrapper"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

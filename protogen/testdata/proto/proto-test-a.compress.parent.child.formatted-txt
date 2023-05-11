@@ -7,7 +7,7 @@ syntax = "proto3";
 
 package openconfig.parent;
 
-import "github.com/openconfig/ygot/proto/ywrapper/ywrapper.proto";
+import "github.com/lyckety/ygot/proto/ywrapper/ywrapper.proto";
 
 // Child represents the /proto-test-a/parent/child YANG schema element.
 message Child {

@@ -11,7 +11,7 @@ Imported modules were sourced from:
 package openconfigimportpath
 
 import (
-	"github.com/openconfig/ygot/ygot"
+	"github.com/lyckety/ygot/ygot"
 )
 
 // ChildPath represents the /openconfig-import/child YANG schema element.
@@ -34,7 +34,7 @@ type Child_TestPathAny struct {
 	*ygot.NodePath
 }
 
-// Test (leaf): 
+// Test (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-import"
 // Instantiating module: "openconfig-import"
@@ -50,7 +50,7 @@ func (n *ChildPath) Test() *Child_TestPath {
 	}
 }
 
-// Test (leaf): 
+// Test (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-import"
 // Instantiating module: "openconfig-import"

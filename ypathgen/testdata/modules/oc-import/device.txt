@@ -11,7 +11,7 @@ Imported modules were sourced from:
 package device
 
 import (
-	"github.com/openconfig/ygot/ygot"
+	"github.com/lyckety/ygot/ygot"
 	"example.com/openconfigimportpath"
 	"example.com/openconfigsimpletargetpath"
 )
@@ -26,7 +26,7 @@ func DeviceRoot(id string) *DevicePath {
 	return &DevicePath{ygot.NewDeviceRootBase(id)}
 }
 
-// Child (container): 
+// Child (container):
 // ----------------------------------------
 // Defining module: "openconfig-import"
 // Instantiating module: "openconfig-import"
@@ -42,7 +42,7 @@ func (n *DevicePath) Child() *openconfigimportpath.ChildPath {
 	}
 }
 
-// Native (container): 
+// Native (container):
 // ----------------------------------------
 // Defining module: "openconfig-simple-target"
 // Instantiating module: "openconfig-simple-target"
@@ -58,7 +58,7 @@ func (n *DevicePath) Native() *openconfigsimpletargetpath.NativePath {
 	}
 }
 
-// Target (container): 
+// Target (container):
 // ----------------------------------------
 // Defining module: "openconfig-simple-target"
 // Instantiating module: "openconfig-simple-target"

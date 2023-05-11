@@ -16,7 +16,7 @@
 package enums
 
 import (
-	_ "github.com/openconfig/ygot/proto/yext"
+	_ "github.com/lyckety/ygot/proto/yext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

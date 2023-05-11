@@ -4,10 +4,10 @@ import (
 	"path/filepath"
 	"testing"
 
+	"github.com/lyckety/ygot/gogen"
+	"github.com/lyckety/ygot/protogen"
+	"github.com/lyckety/ygot/ygen"
 	"github.com/openconfig/gnmi/errdiff"
-	"github.com/openconfig/ygot/gogen"
-	"github.com/openconfig/ygot/protogen"
-	"github.com/openconfig/ygot/ygen"
 )
 
 func TestGenerateErrs(t *testing.T) {

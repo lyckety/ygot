@@ -22,11 +22,11 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
 	"github.com/kylelemons/godebug/pretty"
+	"github.com/lyckety/ygot/genutil"
+	"github.com/lyckety/ygot/internal/igenutil"
+	"github.com/lyckety/ygot/ygen"
+	"github.com/lyckety/ygot/ygot"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/genutil"
-	"github.com/openconfig/ygot/internal/igenutil"
-	"github.com/openconfig/ygot/ygen"
-	"github.com/openconfig/ygot/ygot"
 )
 
 var (

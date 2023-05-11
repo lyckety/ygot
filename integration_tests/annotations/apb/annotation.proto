@@ -15,9 +15,8 @@
 syntax = "proto3";
 
 package annotation;
-option go_package = "github.com/openconfig/ygot/integration_tests/annotations/apb";
+option go_package = "github.com/lyckety/ygot/integration_tests/annotations/apb";
 
 message Annotation {
   string comment = 1;
 }
-

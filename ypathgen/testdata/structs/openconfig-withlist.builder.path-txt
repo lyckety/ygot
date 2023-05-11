@@ -11,7 +11,7 @@ Imported modules were sourced from:
 package ocstructs
 
 import (
-	"github.com/openconfig/ygot/ygot"
+	"github.com/lyckety/ygot/ygot"
 )
 
 // DevicePath represents the /device YANG schema element.
@@ -24,7 +24,7 @@ func DeviceRoot(id string) *DevicePath {
 	return &DevicePath{ygot.NewDeviceRootBase(id)}
 }
 
-// Model (container): 
+// Model (container):
 // ----------------------------------------
 // Defining module: "openconfig-withlist"
 // Instantiating module: "openconfig-withlist"
@@ -50,7 +50,7 @@ type ModelPathAny struct {
 	*ygot.NodePath
 }
 
-// MultiKeyAny (list): 
+// MultiKeyAny (list):
 // ----------------------------------------
 // Defining module: "openconfig-withlist"
 // Instantiating module: "openconfig-withlist"
@@ -66,7 +66,7 @@ func (n *ModelPath) MultiKeyAny() *Model_MultiKeyPathAny {
 	}
 }
 
-// MultiKeyAny (list): 
+// MultiKeyAny (list):
 // ----------------------------------------
 // Defining module: "openconfig-withlist"
 // Instantiating module: "openconfig-withlist"
@@ -96,7 +96,7 @@ func (n *Model_MultiKeyPathAny) WithKey2(Key2 uint64) *Model_MultiKeyPathAny {
 	return n
 }
 
-// SingleKeyAny (list): 
+// SingleKeyAny (list):
 // ----------------------------------------
 // Defining module: "openconfig-withlist"
 // Instantiating module: "openconfig-withlist"
@@ -113,7 +113,7 @@ func (n *ModelPath) SingleKeyAny() *Model_SingleKeyPathAny {
 	}
 }
 
-// SingleKeyAny (list): 
+// SingleKeyAny (list):
 // ----------------------------------------
 // Defining module: "openconfig-withlist"
 // Instantiating module: "openconfig-withlist"
@@ -130,7 +130,7 @@ func (n *ModelPathAny) SingleKeyAny() *Model_SingleKeyPathAny {
 	}
 }
 
-// SingleKey (list): 
+// SingleKey (list):
 // ----------------------------------------
 // Defining module: "openconfig-withlist"
 // Instantiating module: "openconfig-withlist"
@@ -147,7 +147,7 @@ func (n *ModelPath) SingleKey(Key string) *Model_SingleKeyPath {
 	}
 }
 
-// SingleKey (list): 
+// SingleKey (list):
 // ----------------------------------------
 // Defining module: "openconfig-withlist"
 // Instantiating module: "openconfig-withlist"
@@ -194,7 +194,7 @@ type Model_MultiKey_Key2PathAny struct {
 	*ygot.NodePath
 }
 
-// Key1 (leaf): 
+// Key1 (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-withlist"
 // Instantiating module: "openconfig-withlist"
@@ -210,7 +210,7 @@ func (n *Model_MultiKeyPath) Key1() *Model_MultiKey_Key1Path {
 	}
 }
 
-// Key1 (leaf): 
+// Key1 (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-withlist"
 // Instantiating module: "openconfig-withlist"
@@ -226,7 +226,7 @@ func (n *Model_MultiKeyPathAny) Key1() *Model_MultiKey_Key1PathAny {
 	}
 }
 
-// Key2 (leaf): 
+// Key2 (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-withlist"
 // Instantiating module: "openconfig-withlist"
@@ -242,7 +242,7 @@ func (n *Model_MultiKeyPath) Key2() *Model_MultiKey_Key2Path {
 	}
 }
 
-// Key2 (leaf): 
+// Key2 (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-withlist"
 // Instantiating module: "openconfig-withlist"
@@ -278,7 +278,7 @@ type Model_SingleKey_KeyPathAny struct {
 	*ygot.NodePath
 }
 
-// Key (leaf): 
+// Key (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-withlist"
 // Instantiating module: "openconfig-withlist"
@@ -294,7 +294,7 @@ func (n *Model_SingleKeyPath) Key() *Model_SingleKey_KeyPath {
 	}
 }
 
-// Key (leaf): 
+// Key (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-withlist"
 // Instantiating module: "openconfig-withlist"

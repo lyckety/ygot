@@ -11,5 +11,5 @@ Imported modules were sourced from:
 package ocstructs
 
 import (
-	"github.com/openconfig/ygot/ygot"
+	"github.com/lyckety/ygot/ygot"
 )

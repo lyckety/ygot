@@ -30,12 +30,12 @@ import (
 	"strings"
 	"text/template"
 
+	"github.com/lyckety/ygot/genutil"
+	"github.com/lyckety/ygot/gogen"
+	"github.com/lyckety/ygot/util"
+	"github.com/lyckety/ygot/ygen"
+	"github.com/lyckety/ygot/ygot"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/genutil"
-	"github.com/openconfig/ygot/gogen"
-	"github.com/openconfig/ygot/util"
-	"github.com/openconfig/ygot/ygen"
-	"github.com/openconfig/ygot/ygot"
 )
 
 // Static default configuration values that differ from the zero value for their types.

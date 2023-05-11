@@ -19,11 +19,11 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/lyckety/ygot/genutil"
+	"github.com/lyckety/ygot/internal/igenutil"
+	"github.com/lyckety/ygot/util"
+	"github.com/lyckety/ygot/ygen"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/genutil"
-	"github.com/openconfig/ygot/internal/igenutil"
-	"github.com/openconfig/ygot/util"
-	"github.com/openconfig/ygot/ygen"
 )
 
 // Ensure at compile time that the ProtoLangMapper implements the LangMapper interface.
@@ -210,7 +210,7 @@ func (s *ProtoLangMapper) PackageName(e *yang.Entry, compressBehaviour genutil.C
 // resolveProtoTypeArgs specifies input parameters required for resolving types
 // from YANG to protobuf.
 // TODO(robjs): Consider embedding resolveProtoTypeArgs in this struct per
-// discussion in https://github.com/openconfig/ygot/pull/57.
+// discussion in https://github.com/lyckety/ygot/pull/57.
 type resolveProtoTypeArgs struct {
 	// basePackageNAme is the name of the package within which all generated packages
 	// are to be generated.
@@ -265,7 +265,7 @@ func yangEnumTypeToProtoType(args resolveTypeArgs) (*ygen.MappedType, error) {
 // The type returned is a wrapper protobuf such that in proto3 an unset field
 // can be distinguished from one set to the nil value.
 //
-// See https://github.com/openconfig/ygot/blob/master/docs/yang-to-protobuf-transformations-spec.md
+// See https://github.com/lyckety/ygot/blob/master/docs/yang-to-protobuf-transformations-spec.md
 // for additional details as to the transformation from YANG to Protobuf.
 func (s *ProtoLangMapper) yangTypeToProtoType(args resolveTypeArgs, pargs resolveProtoTypeArgs, opts ygen.IROptions) (*ygen.MappedType, error) {
 	// Handle typedef cases.
@@ -316,7 +316,7 @@ func (s *ProtoLangMapper) yangTypeToProtoType(args resolveTypeArgs, pargs resolv
 		mtype.EnumeratedYANGTypeKey = key
 		return mtype, nil
 	case yang.Yidentityref:
-		// TODO(https://github.com/openconfig/ygot/issues/33) - refactor to allow
+		// TODO(https://github.com/lyckety/ygot/issues/33) - refactor to allow
 		// this call outside of the switch.
 		if args.contextEntry == nil {
 			return nil, fmt.Errorf("cannot map identityref without context entry: %v", args)

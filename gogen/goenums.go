@@ -20,8 +20,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/openconfig/ygot/ygen"
-	"github.com/openconfig/ygot/ygot"
+	"github.com/lyckety/ygot/ygen"
+	"github.com/lyckety/ygot/ygot"
 )
 
 // goEnumeratedType contains the intermediate representation of an enumerated

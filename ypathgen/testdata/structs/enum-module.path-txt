@@ -11,7 +11,7 @@ Imported modules were sourced from:
 package ocstructs
 
 import (
-	"github.com/openconfig/ygot/ygot"
+	"github.com/lyckety/ygot/ygot"
 )
 
 // AListPath represents the /enum-module/a-lists/a-list YANG schema element.
@@ -34,7 +34,7 @@ type AList_ValuePathAny struct {
 	*ygot.NodePath
 }
 
-// Value (leaf): 
+// Value (leaf):
 // ----------------------------------------
 // Defining module: "enum-module"
 // Instantiating module: "enum-module"
@@ -50,7 +50,7 @@ func (n *AListPath) Value() *AList_ValuePath {
 	}
 }
 
-// Value (leaf): 
+// Value (leaf):
 // ----------------------------------------
 // Defining module: "enum-module"
 // Instantiating module: "enum-module"
@@ -86,7 +86,7 @@ type BList_ValuePathAny struct {
 	*ygot.NodePath
 }
 
-// Value (leaf): 
+// Value (leaf):
 // ----------------------------------------
 // Defining module: "enum-module"
 // Instantiating module: "enum-module"
@@ -102,7 +102,7 @@ func (n *BListPath) Value() *BList_ValuePath {
 	}
 }
 
-// Value (leaf): 
+// Value (leaf):
 // ----------------------------------------
 // Defining module: "enum-module"
 // Instantiating module: "enum-module"
@@ -138,7 +138,7 @@ type C_ClPathAny struct {
 	*ygot.NodePath
 }
 
-// Cl (leaf): 
+// Cl (leaf):
 // ----------------------------------------
 // Defining module: "enum-submodule"
 // Instantiating module: "enum-module"
@@ -154,7 +154,7 @@ func (n *CPath) Cl() *C_ClPath {
 	}
 }
 
-// Cl (leaf): 
+// Cl (leaf):
 // ----------------------------------------
 // Defining module: "enum-submodule"
 // Instantiating module: "enum-module"
@@ -180,7 +180,7 @@ func DeviceRoot(id string) *DevicePath {
 	return &DevicePath{ygot.NewDeviceRootBase(id)}
 }
 
-// AListAny (list): 
+// AListAny (list):
 // ----------------------------------------
 // Defining module: "enum-module"
 // Instantiating module: "enum-module"
@@ -197,7 +197,7 @@ func (n *DevicePath) AListAny() *AListPathAny {
 	}
 }
 
-// AList (list): 
+// AList (list):
 // ----------------------------------------
 // Defining module: "enum-module"
 // Instantiating module: "enum-module"
@@ -214,7 +214,7 @@ func (n *DevicePath) AList(Value AList_Value_Union) *AListPath {
 	}
 }
 
-// BListAny (list): 
+// BListAny (list):
 // ----------------------------------------
 // Defining module: "enum-module"
 // Instantiating module: "enum-module"
@@ -231,7 +231,7 @@ func (n *DevicePath) BListAny() *BListPathAny {
 	}
 }
 
-// BList (list): 
+// BList (list):
 // ----------------------------------------
 // Defining module: "enum-module"
 // Instantiating module: "enum-module"
@@ -248,7 +248,7 @@ func (n *DevicePath) BList(Value BList_Value_Union) *BListPath {
 	}
 }
 
-// C (container): 
+// C (container):
 // ----------------------------------------
 // Defining module: "enum-submodule"
 // Instantiating module: "enum-module"
@@ -264,7 +264,7 @@ func (n *DevicePath) C() *CPath {
 	}
 }
 
-// Parent (container): 
+// Parent (container):
 // ----------------------------------------
 // Defining module: "enum-module"
 // Instantiating module: "enum-module"
@@ -290,7 +290,7 @@ type ParentPathAny struct {
 	*ygot.NodePath
 }
 
-// Child (container): 
+// Child (container):
 // ----------------------------------------
 // Defining module: "enum-module"
 // Instantiating module: "enum-module"
@@ -306,7 +306,7 @@ func (n *ParentPath) Child() *Parent_ChildPath {
 	}
 }
 
-// Child (container): 
+// Child (container):
 // ----------------------------------------
 // Defining module: "enum-module"
 // Instantiating module: "enum-module"
@@ -372,7 +372,7 @@ type Parent_Child_InlineEnumPathAny struct {
 	*ygot.NodePath
 }
 
-// Enum (leaf): 
+// Enum (leaf):
 // ----------------------------------------
 // Defining module: "enum-module"
 // Instantiating module: "enum-module"
@@ -388,7 +388,7 @@ func (n *Parent_ChildPath) Enum() *Parent_Child_EnumPath {
 	}
 }
 
-// Enum (leaf): 
+// Enum (leaf):
 // ----------------------------------------
 // Defining module: "enum-module"
 // Instantiating module: "enum-module"
@@ -404,7 +404,7 @@ func (n *Parent_ChildPathAny) Enum() *Parent_Child_EnumPathAny {
 	}
 }
 
-// Id (leaf): 
+// Id (leaf):
 // ----------------------------------------
 // Defining module: "enum-module"
 // Instantiating module: "enum-module"
@@ -420,7 +420,7 @@ func (n *Parent_ChildPath) Id() *Parent_Child_IdPath {
 	}
 }
 
-// Id (leaf): 
+// Id (leaf):
 // ----------------------------------------
 // Defining module: "enum-module"
 // Instantiating module: "enum-module"
@@ -436,7 +436,7 @@ func (n *Parent_ChildPathAny) Id() *Parent_Child_IdPathAny {
 	}
 }
 
-// Id2 (leaf): 
+// Id2 (leaf):
 // ----------------------------------------
 // Defining module: "enum-module"
 // Instantiating module: "enum-module"
@@ -452,7 +452,7 @@ func (n *Parent_ChildPath) Id2() *Parent_Child_Id2Path {
 	}
 }
 
-// Id2 (leaf): 
+// Id2 (leaf):
 // ----------------------------------------
 // Defining module: "enum-module"
 // Instantiating module: "enum-module"
@@ -468,7 +468,7 @@ func (n *Parent_ChildPathAny) Id2() *Parent_Child_Id2PathAny {
 	}
 }
 
-// InlineEnum (leaf): 
+// InlineEnum (leaf):
 // ----------------------------------------
 // Defining module: "enum-module"
 // Instantiating module: "enum-module"
@@ -484,7 +484,7 @@ func (n *Parent_ChildPath) InlineEnum() *Parent_Child_InlineEnumPath {
 	}
 }
 
-// InlineEnum (leaf): 
+// InlineEnum (leaf):
 // ----------------------------------------
 // Defining module: "enum-module"
 // Instantiating module: "enum-module"

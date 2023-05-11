@@ -11,7 +11,7 @@ Imported modules were sourced from:
 package ocstructs
 
 import (
-	"github.com/openconfig/ygot/ygot"
+	"github.com/lyckety/ygot/ygot"
 )
 
 // DevicePath represents the /device YANG schema element.
@@ -24,7 +24,7 @@ func DeviceRoot(id string) *DevicePath {
 	return &DevicePath{ygot.NewDeviceRootBase(id)}
 }
 
-// Foo (container): 
+// Foo (container):
 // ----------------------------------------
 // Defining module: "openconfig-enumcamelcase"
 // Instantiating module: "openconfig-enumcamelcase"
@@ -70,7 +70,7 @@ type Foo_BazPathAny struct {
 	*ygot.NodePath
 }
 
-// Bar (leaf): 
+// Bar (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-enumcamelcase"
 // Instantiating module: "openconfig-enumcamelcase"
@@ -86,7 +86,7 @@ func (n *FooPath) Bar() *Foo_BarPath {
 	}
 }
 
-// Bar (leaf): 
+// Bar (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-enumcamelcase"
 // Instantiating module: "openconfig-enumcamelcase"
@@ -102,7 +102,7 @@ func (n *FooPathAny) Bar() *Foo_BarPathAny {
 	}
 }
 
-// Baz (leaf): 
+// Baz (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-enumcamelcase"
 // Instantiating module: "openconfig-enumcamelcase"
@@ -118,7 +118,7 @@ func (n *FooPath) Baz() *Foo_BazPath {
 	}
 }
 
-// Baz (leaf): 
+// Baz (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-enumcamelcase"
 // Instantiating module: "openconfig-enumcamelcase"

@@ -11,7 +11,7 @@ Imported modules were sourced from:
 package ocstructs
 
 import (
-	"github.com/openconfig/ygot/ygot"
+	"github.com/lyckety/ygot/ygot"
 )
 
 // DevicePath represents the /device YANG schema element.
@@ -24,7 +24,7 @@ func DeviceRoot(id string) *DevicePath {
 	return &DevicePath{ygot.NewDeviceRootBase(id)}
 }
 
-// Model (container): 
+// Model (container):
 // ----------------------------------------
 // Defining module: "openconfig-withlist"
 // Instantiating module: "openconfig-withlist"
@@ -45,7 +45,7 @@ type ModelPath struct {
 	*ygot.NodePath
 }
 
-// MultiKey (list): 
+// MultiKey (list):
 // ----------------------------------------
 // Defining module: "openconfig-withlist"
 // Instantiating module: "openconfig-withlist"
@@ -63,7 +63,7 @@ func (n *ModelPath) MultiKey(Key1 uint32, Key2 uint64) *Model_MultiKeyPath {
 	}
 }
 
-// SingleKey (list): 
+// SingleKey (list):
 // ----------------------------------------
 // Defining module: "openconfig-withlist"
 // Instantiating module: "openconfig-withlist"
@@ -95,7 +95,7 @@ type Model_MultiKey_Key2Path struct {
 	*ygot.NodePath
 }
 
-// Key1 (leaf): 
+// Key1 (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-withlist"
 // Instantiating module: "openconfig-withlist"
@@ -111,7 +111,7 @@ func (n *Model_MultiKeyPath) Key1() *Model_MultiKey_Key1Path {
 	}
 }
 
-// Key2 (leaf): 
+// Key2 (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-withlist"
 // Instantiating module: "openconfig-withlist"
@@ -137,7 +137,7 @@ type Model_SingleKey_KeyPath struct {
 	*ygot.NodePath
 }
 
-// Key (leaf): 
+// Key (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-withlist"
 // Instantiating module: "openconfig-withlist"

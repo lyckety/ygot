@@ -19,12 +19,12 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
+	"github.com/lyckety/ygot/exampleoc"
+	"github.com/lyckety/ygot/exampleoc/opstateoc"
+	"github.com/lyckety/ygot/uexampleoc"
+	"github.com/lyckety/ygot/ygot"
+	"github.com/lyckety/ygot/ytypes"
 	"github.com/openconfig/gnmi/errdiff"
-	"github.com/openconfig/ygot/exampleoc"
-	"github.com/openconfig/ygot/exampleoc/opstateoc"
-	"github.com/openconfig/ygot/uexampleoc"
-	"github.com/openconfig/ygot/ygot"
-	"github.com/openconfig/ygot/ytypes"
 	"google.golang.org/protobuf/proto"
 
 	gpb "github.com/openconfig/gnmi/proto/gnmi"

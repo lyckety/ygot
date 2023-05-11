@@ -7,7 +7,7 @@ syntax = "proto3";
 
 package openconfig.enums;
 
-import "github.com/openconfig/ygot/proto/yext/yext.proto";
+import "github.com/lyckety/ygot/proto/yext/yext.proto";
 
 option go_package = "github.com/foo/bar/openconfig/enums";
 

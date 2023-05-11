@@ -7,7 +7,7 @@ syntax = "proto3";
 
 package openconfig;
 
-import "github.com/openconfig/ygot/proto/yext/yext.proto";
+import "github.com/lyckety/ygot/proto/yext/yext.proto";
 import "openconfig/proto_union_list_key/proto_union_list_key.proto";
 
 // Device represents the /device YANG schema element.

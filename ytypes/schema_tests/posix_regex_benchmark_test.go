@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"testing"
 
-	oc "github.com/openconfig/ygot/exampleoc"
+	oc "github.com/lyckety/ygot/exampleoc"
 )
 
 func BenchmarkPOSIXPattern(b *testing.B) {

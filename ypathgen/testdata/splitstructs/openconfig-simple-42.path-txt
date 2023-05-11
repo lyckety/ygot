@@ -11,8 +11,8 @@ Imported modules were sourced from:
 package ocstructs
 
 import (
-	oc "github.com/openconfig/ygot/ypathgen/testdata/exampleoc"
-	"github.com/openconfig/ygot/ygot"
+	oc "github.com/lyckety/ygot/ypathgen/testdata/exampleoc"
+	"github.com/lyckety/ygot/ygot"
 )
 
 // Parent_Child represents the /openconfig-simple/parent/child YANG schema element.
@@ -65,7 +65,7 @@ type Parent_Child_TwoAny struct {
 	*ygot.NodePath
 }
 
-// Four (leaf): 
+// Four (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-simple"
 // Instantiating module: "openconfig-simple"
@@ -81,7 +81,7 @@ func (n *Parent_Child) Four() *Parent_Child_Four {
 	}
 }
 
-// Four (leaf): 
+// Four (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-simple"
 // Instantiating module: "openconfig-simple"
@@ -97,7 +97,7 @@ func (n *Parent_ChildAny) Four() *Parent_Child_FourAny {
 	}
 }
 
-// One (leaf): 
+// One (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-simple"
 // Instantiating module: "openconfig-simple"
@@ -113,7 +113,7 @@ func (n *Parent_Child) One() *Parent_Child_One {
 	}
 }
 
-// One (leaf): 
+// One (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-simple"
 // Instantiating module: "openconfig-simple"
@@ -129,7 +129,7 @@ func (n *Parent_ChildAny) One() *Parent_Child_OneAny {
 	}
 }
 
-// Three (leaf): 
+// Three (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-simple"
 // Instantiating module: "openconfig-simple"
@@ -145,7 +145,7 @@ func (n *Parent_Child) Three() *Parent_Child_Three {
 	}
 }
 
-// Three (leaf): 
+// Three (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-simple"
 // Instantiating module: "openconfig-simple"
@@ -161,7 +161,7 @@ func (n *Parent_ChildAny) Three() *Parent_Child_ThreeAny {
 	}
 }
 
-// Two (leaf): 
+// Two (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-simple"
 // Instantiating module: "openconfig-simple"
@@ -177,7 +177,7 @@ func (n *Parent_Child) Two() *Parent_Child_Two {
 	}
 }
 
-// Two (leaf): 
+// Two (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-simple"
 // Instantiating module: "openconfig-simple"

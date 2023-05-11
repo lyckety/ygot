@@ -5,8 +5,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/openconfig/ygot/util"
-	"github.com/openconfig/ygot/ygen"
+	"github.com/lyckety/ygot/util"
+	"github.com/lyckety/ygot/ygen"
 )
 
 // CodeGenerator is a structure that is used to pass arguments as to
@@ -47,12 +47,12 @@ type ProtoOpts struct {
 	// AnnotateSchemaPaths specifies whether the extensions defined in
 	// yext.proto should be used to annotate schema paths into the output
 	// protobuf file. See
-	// https://github.com/openconfig/ygot/blob/master/docs/yang-to-protobuf-transformations-spec.md#annotation-of-schema-paths
+	// https://github.com/lyckety/ygot/blob/master/docs/yang-to-protobuf-transformations-spec.md#annotation-of-schema-paths
 	AnnotateSchemaPaths bool
 	// AnnotateEnumNames specifies whether the extensions defined in
 	// yext.proto should be used to annotate enum values with their
 	// original YANG names in the output protobuf file.
-	// See https://github.com/openconfig/ygot/blob/master/docs/yang-to-protobuf-transformations-spec.md#annotation-of-enums
+	// See https://github.com/lyckety/ygot/blob/master/docs/yang-to-protobuf-transformations-spec.md#annotation-of-enums
 	AnnotateEnumNames bool
 	// NestedMessages indicates whether nested messages should be
 	// output for the protobuf schema. If false, a separate package

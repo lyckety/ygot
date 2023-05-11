@@ -19,10 +19,10 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
+	"github.com/lyckety/ygot/testutil"
+	"github.com/lyckety/ygot/ygen"
+	"github.com/lyckety/ygot/ygot"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/testutil"
-	"github.com/openconfig/ygot/ygen"
-	"github.com/openconfig/ygot/ygot"
 )
 
 // TestGenGoEnumeratedTypes validates the enumerated type code generation from a YANG

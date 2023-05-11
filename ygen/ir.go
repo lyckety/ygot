@@ -18,10 +18,10 @@ import (
 	"fmt"
 	"sort"
 
+	"github.com/lyckety/ygot/genutil"
+	"github.com/lyckety/ygot/ygot"
 	gpb "github.com/openconfig/gnmi/proto/gnmi"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/genutil"
-	"github.com/openconfig/ygot/ygot"
 )
 
 // This file describes the intermediate representation that is produced by

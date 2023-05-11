@@ -2,13 +2,13 @@ syntax = "proto3";
 
 package exschemapath;
 
-option go_package = "github.com/openconfig/ygot/protomap/testdata/exschemapath";
+option go_package = "github.com/lyckety/ygot/protomap/testdata/exschemapath";
 
-import "github.com/openconfig/ygot/proto/ywrapper/ywrapper.proto";
-import "github.com/openconfig/ygot/proto/yext/yext.proto";
+import "github.com/lyckety/ygot/proto/ywrapper/ywrapper.proto";
+import "github.com/lyckety/ygot/proto/yext/yext.proto";
 
 message Root {
-    System system = 1; 
+    System system = 1;
     message InterfaceKey {
         string name = 1 [(yext.schemapath) = "/interfaces/interface/config/name|/interfaces/interface/name"];
         Interface interface = 2;

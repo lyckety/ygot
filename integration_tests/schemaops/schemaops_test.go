@@ -17,9 +17,9 @@ package schemaops
 import (
 	"testing"
 
-	"github.com/openconfig/ygot/integration_tests/schemaops/testschema"
-	"github.com/openconfig/ygot/ygot"
-	"github.com/openconfig/ygot/ytypes"
+	"github.com/lyckety/ygot/integration_tests/schemaops/testschema"
+	"github.com/lyckety/ygot/ygot"
+	"github.com/lyckety/ygot/ytypes"
 )
 
 func TestGetOrCreateNode(t *testing.T) {

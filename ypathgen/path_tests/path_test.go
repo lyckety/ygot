@@ -19,9 +19,9 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	oc "github.com/openconfig/ygot/exampleoc"
-	"github.com/openconfig/ygot/ygot"
-	"github.com/openconfig/ygot/ypathgen"
+	oc "github.com/lyckety/ygot/exampleoc"
+	"github.com/lyckety/ygot/ygot"
+	"github.com/lyckety/ygot/ypathgen"
 	"google.golang.org/protobuf/proto"
 )
 

@@ -21,13 +21,13 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/lyckety/ygot/genutil"
+	"github.com/lyckety/ygot/internal/igenutil"
+	"github.com/lyckety/ygot/util"
+	"github.com/lyckety/ygot/ygen"
+	"github.com/lyckety/ygot/ygot"
+	"github.com/lyckety/ygot/ytypes"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/genutil"
-	"github.com/openconfig/ygot/internal/igenutil"
-	"github.com/openconfig/ygot/util"
-	"github.com/openconfig/ygot/ygen"
-	"github.com/openconfig/ygot/ygot"
-	"github.com/openconfig/ygot/ytypes"
 )
 
 const (

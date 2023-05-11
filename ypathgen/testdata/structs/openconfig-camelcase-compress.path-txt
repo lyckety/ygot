@@ -11,7 +11,7 @@ Imported modules were sourced from:
 package ocstructs
 
 import (
-	"github.com/openconfig/ygot/ygot"
+	"github.com/lyckety/ygot/ygot"
 )
 
 // BGPPath represents the /openconfig-camelcase/bgp YANG schema element.
@@ -24,7 +24,7 @@ type BGPPathAny struct {
 	*ygot.NodePath
 }
 
-// NeighborAny (list): 
+// NeighborAny (list):
 // ----------------------------------------
 // Defining module: "openconfig-camelcase"
 // Instantiating module: "openconfig-camelcase"
@@ -41,7 +41,7 @@ func (n *BGPPath) NeighborAny() *BGP_NeighborPathAny {
 	}
 }
 
-// NeighborAny (list): 
+// NeighborAny (list):
 // ----------------------------------------
 // Defining module: "openconfig-camelcase"
 // Instantiating module: "openconfig-camelcase"
@@ -58,7 +58,7 @@ func (n *BGPPathAny) NeighborAny() *BGP_NeighborPathAny {
 	}
 }
 
-// Neighbor (list): 
+// Neighbor (list):
 // ----------------------------------------
 // Defining module: "openconfig-camelcase"
 // Instantiating module: "openconfig-camelcase"
@@ -75,7 +75,7 @@ func (n *BGPPath) Neighbor(PeerIP string) *BGP_NeighborPath {
 	}
 }
 
-// Neighbor (list): 
+// Neighbor (list):
 // ----------------------------------------
 // Defining module: "openconfig-camelcase"
 // Instantiating module: "openconfig-camelcase"
@@ -112,7 +112,7 @@ type BGP_Neighbor_PeerIPPathAny struct {
 	*ygot.NodePath
 }
 
-// PeerIP (leaf): 
+// PeerIP (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-camelcase"
 // Instantiating module: "openconfig-camelcase"
@@ -128,7 +128,7 @@ func (n *BGP_NeighborPath) PeerIP() *BGP_Neighbor_PeerIPPath {
 	}
 }
 
-// PeerIP (leaf): 
+// PeerIP (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-camelcase"
 // Instantiating module: "openconfig-camelcase"
@@ -154,7 +154,7 @@ func DeviceRoot(id string) *DevicePath {
 	return &DevicePath{ygot.NewDeviceRootBase(id)}
 }
 
-// BGP (container): 
+// BGP (container):
 // ----------------------------------------
 // Defining module: "openconfig-camelcase"
 // Instantiating module: "openconfig-camelcase"

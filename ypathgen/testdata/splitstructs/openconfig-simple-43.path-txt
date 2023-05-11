@@ -11,8 +11,8 @@ Imported modules were sourced from:
 package ocstructs
 
 import (
-	oc "github.com/openconfig/ygot/ypathgen/testdata/exampleoc"
-	"github.com/openconfig/ygot/ygot"
+	oc "github.com/lyckety/ygot/ypathgen/testdata/exampleoc"
+	"github.com/lyckety/ygot/ygot"
 )
 
 // RemoteContainer represents the /openconfig-simple/remote-container YANG schema element.
@@ -35,7 +35,7 @@ type RemoteContainer_ALeafAny struct {
 	*ygot.NodePath
 }
 
-// ALeaf (leaf): 
+// ALeaf (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-remote"
 // Instantiating module: "openconfig-simple"
@@ -51,7 +51,7 @@ func (n *RemoteContainer) ALeaf() *RemoteContainer_ALeaf {
 	}
 }
 
-// ALeaf (leaf): 
+// ALeaf (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-remote"
 // Instantiating module: "openconfig-simple"

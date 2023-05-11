@@ -22,9 +22,9 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/lyckety/ygot/util"
 	"github.com/openconfig/gnmi/errlist"
 	"github.com/openconfig/gnmi/value"
-	"github.com/openconfig/ygot/util"
 	"google.golang.org/protobuf/encoding/prototext"
 	"google.golang.org/protobuf/proto"
 

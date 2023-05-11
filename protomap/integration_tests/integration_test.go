@@ -6,10 +6,10 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"github.com/openconfig/ygot/protomap"
-	"github.com/openconfig/ygot/protomap/integration_tests/testdata/gribi_aft"
-	"github.com/openconfig/ygot/testutil"
-	"github.com/openconfig/ygot/ygot"
+	"github.com/lyckety/ygot/protomap"
+	"github.com/lyckety/ygot/protomap/integration_tests/testdata/gribi_aft"
+	"github.com/lyckety/ygot/testutil"
+	"github.com/lyckety/ygot/ygot"
 	"google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/testing/protocmp"
 

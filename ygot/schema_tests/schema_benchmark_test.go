@@ -3,7 +3,7 @@ package schematest
 import (
 	"testing"
 
-	"github.com/openconfig/ygot/exampleoc"
+	"github.com/lyckety/ygot/exampleoc"
 )
 
 func BenchmarkPopulateDefaults(b *testing.B) {

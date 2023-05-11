@@ -22,10 +22,10 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
+	"github.com/lyckety/ygot/testutil"
+	"github.com/lyckety/ygot/ygen"
+	"github.com/lyckety/ygot/ygot"
 	"github.com/openconfig/gnmi/errdiff"
-	"github.com/openconfig/ygot/testutil"
-	"github.com/openconfig/ygot/ygen"
-	"github.com/openconfig/ygot/ygot"
 )
 
 const (
@@ -413,7 +413,7 @@ func TestGeneratePathCode(t *testing.T) {
 		inShortenEnumLeafNames:                 true,
 		inUseDefiningModuleForTypedefEnumNames: true,
 		inGenerateWildcardPaths:                true,
-		inSchemaStructPkgPath:                  "github.com/openconfig/ygot/ypathgen/testdata/exampleoc",
+		inSchemaStructPkgPath:                  "github.com/lyckety/ygot/ypathgen/testdata/exampleoc",
 		inPathStructSuffix:                     "",
 		wantStructsCodeFile:                    filepath.Join(TestRoot, "testdata/structs/openconfig-withlist-separate-package.path-txt"),
 	}, {
@@ -840,7 +840,7 @@ func TestGeneratePathCode(t *testing.T) {
 		inShortenEnumLeafNames:                 true,
 		inUseDefiningModuleForTypedefEnumNames: true,
 		inGenerateWildcardPaths:                true,
-		inSchemaStructPkgPath:                  "github.com/openconfig/ygot/ypathgen/testdata/exampleoc",
+		inSchemaStructPkgPath:                  "github.com/lyckety/ygot/ypathgen/testdata/exampleoc",
 		inPathStructSuffix:                     "",
 		wantStructsCodeFile:                    filepath.Join(TestRoot, "testdata/structs/openconfig-augmented.path-txt"),
 		wantNodeDataMap: NodeDataMap{
@@ -1020,7 +1020,7 @@ func TestGeneratePathCodeSplitFiles(t *testing.T) {
 		name:                  "fileNumber is exactly the total number of structs",
 		inFiles:               []string{filepath.Join(datapath, "openconfig-simple.yang")},
 		inFileNumber:          4,
-		inSchemaStructPkgPath: "github.com/openconfig/ygot/ypathgen/testdata/exampleoc",
+		inSchemaStructPkgPath: "github.com/lyckety/ygot/ypathgen/testdata/exampleoc",
 		wantStructsCodeFiles:  []string{filepath.Join(TestRoot, "testdata/splitstructs/openconfig-simple-40.path-txt"), filepath.Join(TestRoot, "testdata/splitstructs/openconfig-simple-41.path-txt"), filepath.Join(TestRoot, "testdata/splitstructs/openconfig-simple-42.path-txt"), filepath.Join(TestRoot, "testdata/splitstructs/openconfig-simple-43.path-txt")},
 	}, {
 		name:                  "fileNumber is just under the total number of structs",
@@ -1032,7 +1032,7 @@ func TestGeneratePathCodeSplitFiles(t *testing.T) {
 		name:                  "fileNumber is half the total number of structs",
 		inFiles:               []string{filepath.Join(datapath, "openconfig-simple.yang")},
 		inFileNumber:          2,
-		inSchemaStructPkgPath: "github.com/openconfig/ygot/ypathgen/testdata/exampleoc",
+		inSchemaStructPkgPath: "github.com/lyckety/ygot/ypathgen/testdata/exampleoc",
 		wantStructsCodeFiles:  []string{filepath.Join(TestRoot, "testdata/splitstructs/openconfig-simple-0.path-txt"), filepath.Join(TestRoot, "testdata/splitstructs/openconfig-simple-1.path-txt")},
 	}, {
 		name:                  "single file",
@@ -1987,7 +1987,7 @@ const (
 	// wantListMethodsNonWildcard is the expected non-wildcard child constructor
 	// method for the test list node.
 	wantListMethodsNonWildcard = `
-// List (list): 
+// List (list):
 // ----------------------------------------
 // Defining module: "root-module"
 // Instantiating module: "root-module"
@@ -2008,7 +2008,7 @@ func (n *RootPath) List(Key1 string, Key2 oc.Binary, UnionKey oc.RootElementModu
 `
 
 	wantListMethodsWildcardCommon = `
-// ListAnyKey2AnyUnionKey (list): 
+// ListAnyKey2AnyUnionKey (list):
 // ----------------------------------------
 // Defining module: "root-module"
 // Instantiating module: "root-module"
@@ -2027,7 +2027,7 @@ func (n *RootPath) ListAnyKey2AnyUnionKey(Key1 string) *ListPathAny {
 	}
 }
 
-// ListAnyKey1AnyUnionKey (list): 
+// ListAnyKey1AnyUnionKey (list):
 // ----------------------------------------
 // Defining module: "root-module"
 // Instantiating module: "root-module"
@@ -2046,7 +2046,7 @@ func (n *RootPath) ListAnyKey1AnyUnionKey(Key2 oc.Binary) *ListPathAny {
 	}
 }
 
-// ListAnyUnionKey (list): 
+// ListAnyUnionKey (list):
 // ----------------------------------------
 // Defining module: "root-module"
 // Instantiating module: "root-module"
@@ -2065,7 +2065,7 @@ func (n *RootPath) ListAnyUnionKey(Key1 string, Key2 oc.Binary) *ListPathAny {
 	}
 }
 
-// ListAnyKey1AnyKey2 (list): 
+// ListAnyKey1AnyKey2 (list):
 // ----------------------------------------
 // Defining module: "root-module"
 // Instantiating module: "root-module"
@@ -2084,7 +2084,7 @@ func (n *RootPath) ListAnyKey1AnyKey2(UnionKey oc.RootElementModule_List_UnionKe
 	}
 }
 
-// ListAnyKey2 (list): 
+// ListAnyKey2 (list):
 // ----------------------------------------
 // Defining module: "root-module"
 // Instantiating module: "root-module"
@@ -2103,7 +2103,7 @@ func (n *RootPath) ListAnyKey2(Key1 string, UnionKey oc.RootElementModule_List_U
 	}
 }
 
-// ListAnyKey1 (list): 
+// ListAnyKey1 (list):
 // ----------------------------------------
 // Defining module: "root-module"
 // Instantiating module: "root-module"
@@ -2125,7 +2125,7 @@ func (n *RootPath) ListAnyKey1(Key2 oc.Binary, UnionKey oc.RootElementModule_Lis
 
 	// wantListMethods is the expected child constructor methods for the test list node.
 	wantListMethods = `
-// ListAny (list): 
+// ListAny (list):
 // ----------------------------------------
 // Defining module: "root-module"
 // Instantiating module: "root-module"
@@ -2148,7 +2148,7 @@ func (n *RootPath) ListAny() *ListPathAny {
 	// wantListMethodsSimplified is the expected child constructor methods for
 	// the test list node when SimplifyWildcardPaths=true.
 	wantListMethodsSimplified = `
-// ListAny (list): 
+// ListAny (list):
 // ----------------------------------------
 // Defining module: "root-module"
 // Instantiating module: "root-module"

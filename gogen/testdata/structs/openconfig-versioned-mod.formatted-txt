@@ -16,7 +16,7 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/openconfig/ygot/ygot"
+	"github.com/lyckety/ygot/ygot"
 	gpb "github.com/openconfig/gnmi/proto/gnmi"
 )
 

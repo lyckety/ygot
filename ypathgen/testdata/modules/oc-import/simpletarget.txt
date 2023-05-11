@@ -11,7 +11,7 @@ Imported modules were sourced from:
 package openconfigsimpletargetpath
 
 import (
-	"github.com/openconfig/ygot/ygot"
+	"github.com/lyckety/ygot/ygot"
 )
 
 // NativePath represents the /openconfig-simple-target/native YANG schema element.
@@ -34,7 +34,7 @@ type Native_APathAny struct {
 	*ygot.NodePath
 }
 
-// A (leaf): 
+// A (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-simple-target"
 // Instantiating module: "openconfig-simple-target"
@@ -50,7 +50,7 @@ func (n *NativePath) A() *Native_APath {
 	}
 }
 
-// A (leaf): 
+// A (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-simple-target"
 // Instantiating module: "openconfig-simple-target"

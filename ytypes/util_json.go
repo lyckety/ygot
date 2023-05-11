@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"reflect"
 
+	"github.com/lyckety/ygot/util"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/util"
 )
 
 // getJSONTreeValForField returns the JSON subtree of the provided tree that

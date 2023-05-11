@@ -22,14 +22,14 @@ import (
 	"strings"
 	"text/template"
 
+	"github.com/lyckety/ygot/genutil"
+	"github.com/lyckety/ygot/internal/igenutil"
+	"github.com/lyckety/ygot/util"
+	"github.com/lyckety/ygot/ygen"
+	"github.com/lyckety/ygot/ygot"
 	"github.com/openconfig/gnmi/errlist"
 	gpb "github.com/openconfig/gnmi/proto/gnmi"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/genutil"
-	"github.com/openconfig/ygot/internal/igenutil"
-	"github.com/openconfig/ygot/util"
-	"github.com/openconfig/ygot/ygen"
-	"github.com/openconfig/ygot/ygot"
 )
 
 const (
@@ -918,7 +918,7 @@ func (t *{{ .Receiver }}) Append{{ .ListName }}(v *{{ .ListType }}) error {
 		{{ $key.Name }}: *v.{{ $key.Name }},
 		{{- else }}
 		{{ $key.Name }}: v.{{ $key.Name }},
-		{{- end -}} 
+		{{- end -}}
 		{{ end }}
 	}
 	{{- else -}}

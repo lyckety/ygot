@@ -29,8 +29,8 @@ import (
 	"reflect"
 	"strings"
 
+	"github.com/lyckety/ygot/util"
 	"github.com/openconfig/gnmi/errlist"
-	"github.com/openconfig/ygot/util"
 )
 
 const (

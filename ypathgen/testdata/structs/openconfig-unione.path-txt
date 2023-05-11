@@ -11,7 +11,7 @@ Imported modules were sourced from:
 package ocstructs
 
 import (
-	"github.com/openconfig/ygot/ygot"
+	"github.com/lyckety/ygot/ygot"
 )
 
 // DevicePath represents the /device YANG schema element.
@@ -24,7 +24,7 @@ func DeviceRoot(id string) *DevicePath {
 	return &DevicePath{ygot.NewDeviceRootBase(id)}
 }
 
-// DupEnum (container): 
+// DupEnum (container):
 // ----------------------------------------
 // Defining module: "openconfig-unione"
 // Instantiating module: "openconfig-unione"
@@ -40,7 +40,7 @@ func (n *DevicePath) DupEnum() *DupEnumPath {
 	}
 }
 
-// Platform (container): 
+// Platform (container):
 // ----------------------------------------
 // Defining module: "openconfig-unione"
 // Instantiating module: "openconfig-unione"
@@ -86,7 +86,7 @@ type DupEnum_BPathAny struct {
 	*ygot.NodePath
 }
 
-// A (leaf): 
+// A (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-unione"
 // Instantiating module: "openconfig-unione"
@@ -102,7 +102,7 @@ func (n *DupEnumPath) A() *DupEnum_APath {
 	}
 }
 
-// A (leaf): 
+// A (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-unione"
 // Instantiating module: "openconfig-unione"
@@ -118,7 +118,7 @@ func (n *DupEnumPathAny) A() *DupEnum_APathAny {
 	}
 }
 
-// B (leaf): 
+// B (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-unione"
 // Instantiating module: "openconfig-unione"
@@ -134,7 +134,7 @@ func (n *DupEnumPath) B() *DupEnum_BPath {
 	}
 }
 
-// B (leaf): 
+// B (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-unione"
 // Instantiating module: "openconfig-unione"
@@ -160,7 +160,7 @@ type PlatformPathAny struct {
 	*ygot.NodePath
 }
 
-// Component (container): 
+// Component (container):
 // ----------------------------------------
 // Defining module: "openconfig-unione"
 // Instantiating module: "openconfig-unione"
@@ -176,7 +176,7 @@ func (n *PlatformPath) Component() *Platform_ComponentPath {
 	}
 }
 
-// Component (container): 
+// Component (container):
 // ----------------------------------------
 // Defining module: "openconfig-unione"
 // Instantiating module: "openconfig-unione"
@@ -252,7 +252,7 @@ type Platform_Component_TypePathAny struct {
 	*ygot.NodePath
 }
 
-// E1 (leaf): 
+// E1 (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-unione"
 // Instantiating module: "openconfig-unione"
@@ -268,7 +268,7 @@ func (n *Platform_ComponentPath) E1() *Platform_Component_E1Path {
 	}
 }
 
-// E1 (leaf): 
+// E1 (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-unione"
 // Instantiating module: "openconfig-unione"
@@ -284,7 +284,7 @@ func (n *Platform_ComponentPathAny) E1() *Platform_Component_E1PathAny {
 	}
 }
 
-// Enumerated (leaf): 
+// Enumerated (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-unione"
 // Instantiating module: "openconfig-unione"
@@ -300,7 +300,7 @@ func (n *Platform_ComponentPath) Enumerated() *Platform_Component_EnumeratedPath
 	}
 }
 
-// Enumerated (leaf): 
+// Enumerated (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-unione"
 // Instantiating module: "openconfig-unione"
@@ -316,7 +316,7 @@ func (n *Platform_ComponentPathAny) Enumerated() *Platform_Component_EnumeratedP
 	}
 }
 
-// Power (leaf): 
+// Power (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-unione"
 // Instantiating module: "openconfig-unione"
@@ -332,7 +332,7 @@ func (n *Platform_ComponentPath) Power() *Platform_Component_PowerPath {
 	}
 }
 
-// Power (leaf): 
+// Power (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-unione"
 // Instantiating module: "openconfig-unione"
@@ -348,7 +348,7 @@ func (n *Platform_ComponentPathAny) Power() *Platform_Component_PowerPathAny {
 	}
 }
 
-// R1 (leaf): 
+// R1 (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-unione"
 // Instantiating module: "openconfig-unione"
@@ -364,7 +364,7 @@ func (n *Platform_ComponentPath) R1() *Platform_Component_R1Path {
 	}
 }
 
-// R1 (leaf): 
+// R1 (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-unione"
 // Instantiating module: "openconfig-unione"
@@ -380,7 +380,7 @@ func (n *Platform_ComponentPathAny) R1() *Platform_Component_R1PathAny {
 	}
 }
 
-// Type (leaf): 
+// Type (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-unione"
 // Instantiating module: "openconfig-unione"
@@ -396,7 +396,7 @@ func (n *Platform_ComponentPath) Type() *Platform_Component_TypePath {
 	}
 }
 
-// Type (leaf): 
+// Type (leaf):
 // ----------------------------------------
 // Defining module: "openconfig-unione"
 // Instantiating module: "openconfig-unione"

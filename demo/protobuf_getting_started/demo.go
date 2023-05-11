@@ -25,10 +25,10 @@ import (
 	log "github.com/golang/glog"
 	"github.com/golang/protobuf/proto"
 
-	ocpb "github.com/openconfig/ygot/demo/protobuf_getting_started/ribproto/openconfig"
-	ocepb "github.com/openconfig/ygot/demo/protobuf_getting_started/ribproto/openconfig/enums"
-	ocrpb "github.com/openconfig/ygot/demo/protobuf_getting_started/ribproto/openconfig/openconfig_rib_bgp"
-	ywpb "github.com/openconfig/ygot/proto/ywrapper"
+	ocpb "github.com/lyckety/ygot/demo/protobuf_getting_started/ribproto/openconfig"
+	ocepb "github.com/lyckety/ygot/demo/protobuf_getting_started/ribproto/openconfig/enums"
+	ocrpb "github.com/lyckety/ygot/demo/protobuf_getting_started/ribproto/openconfig/openconfig_rib_bgp"
+	ywpb "github.com/lyckety/ygot/proto/ywrapper"
 )
 
 func main() {

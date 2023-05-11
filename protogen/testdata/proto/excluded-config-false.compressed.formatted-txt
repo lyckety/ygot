@@ -7,7 +7,7 @@ syntax = "proto3";
 
 package openconfig;
 
-import "github.com/openconfig/ygot/proto/yext/yext.proto";
+import "github.com/lyckety/ygot/proto/yext/yext.proto";
 import "openconfig/openconfig_config_false/openconfig_config_false.proto";
 
 message Device {

@@ -19,9 +19,9 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/openconfig/ygot/exampleoc"
-	"github.com/openconfig/ygot/ygot"
-	"github.com/openconfig/ygot/ytypes"
+	"github.com/lyckety/ygot/exampleoc"
+	"github.com/lyckety/ygot/ygot"
+	"github.com/lyckety/ygot/ytypes"
 
 	gpb "github.com/openconfig/gnmi/proto/gnmi"
 )

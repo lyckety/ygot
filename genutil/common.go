@@ -22,18 +22,18 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/lyckety/ygot/util"
+	"github.com/lyckety/ygot/ygot"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/util"
-	"github.com/openconfig/ygot/ygot"
 )
 
 const (
 	// GoDefaultYgotImportPath is the default import path used for the ygot library
 	// in the generated code.
-	GoDefaultYgotImportPath = "github.com/openconfig/ygot/ygot"
+	GoDefaultYgotImportPath = "github.com/lyckety/ygot/ygot"
 	// GoDefaultYtypesImportPath is the default import path used for the ytypes library
 	// in the generated code.
-	GoDefaultYtypesImportPath = "github.com/openconfig/ygot/ytypes"
+	GoDefaultYtypesImportPath = "github.com/lyckety/ygot/ytypes"
 	// GoDefaultGoyangImportPath is the default path for the goyang/pkg/yang library that
 	// is used in the generated code.
 	GoDefaultGoyangImportPath = "github.com/openconfig/goyang/pkg/yang"

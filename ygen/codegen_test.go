@@ -18,9 +18,9 @@ import (
 	"testing"
 
 	"github.com/kylelemons/godebug/pretty"
+	"github.com/lyckety/ygot/internal/igenutil"
 	"github.com/openconfig/gnmi/errdiff"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/internal/igenutil"
 )
 
 // TestFindMappableEntities tests the extraction of elements that are to be mapped

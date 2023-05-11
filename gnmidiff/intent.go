@@ -21,10 +21,10 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/lyckety/ygot/util"
+	"github.com/lyckety/ygot/ygot"
+	"github.com/lyckety/ygot/ytypes"
 	gpb "github.com/openconfig/gnmi/proto/gnmi"
-	"github.com/openconfig/ygot/util"
-	"github.com/openconfig/ygot/ygot"
-	"github.com/openconfig/ygot/ytypes"
 )
 
 // setRequestIntent represents the minimal intent of a SetRequest.

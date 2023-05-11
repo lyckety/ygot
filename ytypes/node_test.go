@@ -22,9 +22,9 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
+	"github.com/lyckety/ygot/ygot"
 	"github.com/openconfig/gnmi/errdiff"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/ygot"
 	"google.golang.org/protobuf/encoding/prototext"
 	"google.golang.org/protobuf/proto"
 
@@ -2426,7 +2426,7 @@ func TestSetNode(t *testing.T) {
 					"forty-two": {
 						Key1: ygot.String("forty-two"),
 						Outer: &OuterContainerType1{
-							// TODO(wenovus): https://github.com/openconfig/ygot/issues/544
+							// TODO(wenovus): https://github.com/lyckety/ygot/issues/544
 							// This should be deleted.
 							Inner: &InnerContainerType1{},
 						},

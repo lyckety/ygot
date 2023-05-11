@@ -18,9 +18,9 @@ import (
 	"testing"
 
 	"github.com/kylelemons/godebug/pretty"
-	"github.com/openconfig/ygot/testutil"
-	"github.com/openconfig/ygot/ygen"
-	"github.com/openconfig/ygot/ygot"
+	"github.com/lyckety/ygot/testutil"
+	"github.com/lyckety/ygot/ygen"
+	"github.com/lyckety/ygot/ygot"
 )
 
 // wantGoStructOut is used to store the expected output of a writeGoStructs

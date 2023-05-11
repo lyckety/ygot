@@ -26,9 +26,9 @@ import (
 	"github.com/kylelemons/godebug/pretty"
 	"google.golang.org/protobuf/proto"
 
+	"github.com/lyckety/ygot/testutil"
 	"github.com/openconfig/gnmi/errdiff"
 	gnmipb "github.com/openconfig/gnmi/proto/gnmi"
-	"github.com/openconfig/ygot/testutil"
 )
 
 const (

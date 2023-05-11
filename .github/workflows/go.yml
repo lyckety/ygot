@@ -37,31 +37,31 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v3
         with:
-          path: go/src/github.com/openconfig/ygot
+          path: go/src/github.com/lyckety/ygot
 
       - name: Get dependencies
         run: |
           go get -v -t -d ./...
-        working-directory: go/src/github.com/openconfig/ygot
+        working-directory: go/src/github.com/lyckety/ygot
 
       - name: Generate dependencies
         run: make generate
-        working-directory: go/src/github.com/openconfig/ygot
+        working-directory: go/src/github.com/lyckety/ygot
 
       - name: Build packages
         run: go build -v ./...
-        working-directory: go/src/github.com/openconfig/ygot
+        working-directory: go/src/github.com/lyckety/ygot
 
       - name: Run Tests
         run: go test -v ./...
-        working-directory: go/src/github.com/openconfig/ygot
+        working-directory: go/src/github.com/lyckety/ygot
 
       - name: Run race tests
         run:  go test -race -v ./...
-        working-directory: go/src/github.com/openconfig/ygot
+        working-directory: go/src/github.com/lyckety/ygot
 
       - name: Check that Go integration test files compile
-        working-directory: go/src/github.com/openconfig/ygot
+        working-directory: go/src/github.com/lyckety/ygot
         run: |
           function test-go-build() {
             cwd=$(pwd)
@@ -114,7 +114,7 @@ jobs:
 
       - name: Make sure exampleoc doesn't error or panic
         run: go generate ./...
-        working-directory: go/src/github.com/openconfig/ygot
+        working-directory: go/src/github.com/lyckety/ygot
 
   static_analysis:
     name: Static Analysis
@@ -141,7 +141,7 @@ jobs:
 
       - name: Run coverage
         run: |
-          pkgs="$(go list ./... | grep -v 'github.com/openconfig/ygot/exampleoc' | grep -v 'github.com/openconfig/ygot/uexampleoc' | grep -v 'github.com/openconfig/ygot/proto/' | grep -v 'github.com/openconfig/ygot/demo/' | grep -v 'github.com/openconfig/ygot/integration_tests' | grep -v 'github.com/openconfig/ygot/generator' | grep -v 'github.com/openconfig/ygot/gnmidiff/cmd' | tr '\n' ' ')"
+          pkgs="$(go list ./... | grep -v 'github.com/lyckety/ygot/exampleoc' | grep -v 'github.com/lyckety/ygot/uexampleoc' | grep -v 'github.com/lyckety/ygot/proto/' | grep -v 'github.com/lyckety/ygot/demo/' | grep -v 'github.com/lyckety/ygot/integration_tests' | grep -v 'github.com/lyckety/ygot/generator' | grep -v 'github.com/lyckety/ygot/gnmidiff/cmd' | tr '\n' ' ')"
           for p in $pkgs; do
             dir=$(echo $p | sed -e 's/^github\.com\/openconfig\/ygot\///')
             go test -covermode count -coverprofile profile.coverprofile -outputdir $dir $p
@@ -149,8 +149,8 @@ jobs:
 
           # Overwrite results for gogen/protogen since they also cover ygen's
           # code.
-          go test -covermode count -coverprofile profile.coverprofile -outputdir gogen -coverpkg github.com/openconfig/ygot/gogen,github.com/openconfig/ygot/ygen github.com/openconfig/ygot/gogen
-          go test -covermode count -coverprofile profile.coverprofile -outputdir protogen -coverpkg github.com/openconfig/ygot/protogen,github.com/openconfig/ygot/ygen github.com/openconfig/ygot/protogen
+          go test -covermode count -coverprofile profile.coverprofile -outputdir gogen -coverpkg github.com/lyckety/ygot/gogen,github.com/lyckety/ygot/ygen github.com/lyckety/ygot/gogen
+          go test -covermode count -coverprofile profile.coverprofile -outputdir protogen -coverpkg github.com/lyckety/ygot/protogen,github.com/lyckety/ygot/ygen github.com/lyckety/ygot/protogen
 
           echo 'mode: count' > concatenated.coverprofile
           for p in $pkgs; do
@@ -174,7 +174,7 @@ jobs:
 
       - name: Gofmt
         run: |
-          for i in `find . -type d | egrep -v "exampleoc|demo|proto|uexampleoc"`; do 
+          for i in `find . -type d | egrep -v "exampleoc|demo|proto|uexampleoc"`; do
             diff -u <(echo -n) <(gofmt -d -s ./$i)
           done
 
@@ -182,6 +182,6 @@ jobs:
         run: |
           checkstr=""
           for i in util ygot ygen ytypes ygot/pathtranslate testutil testcmp ypathgen; do
-            checkstr="$checkstr github.com/openconfig/ygot/$i/..."
+            checkstr="$checkstr github.com/lyckety/ygot/$i/..."
           done
           staticcheck $checkstr

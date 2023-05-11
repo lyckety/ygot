@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/openconfig/ygot/gnmidiff/cmd"
+	"github.com/lyckety/ygot/gnmidiff/cmd"
 )
 
 func main() {

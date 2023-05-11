@@ -19,8 +19,8 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/lyckety/ygot/ygot"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/ygot"
 )
 
 type Case1Leaf1ChoiceStruct struct {

@@ -25,11 +25,11 @@ import (
 	"strings"
 	"text/template"
 
+	"github.com/lyckety/ygot/genutil"
+	"github.com/lyckety/ygot/internal/igenutil"
+	"github.com/lyckety/ygot/util"
+	"github.com/lyckety/ygot/ygen"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/genutil"
-	"github.com/openconfig/ygot/internal/igenutil"
-	"github.com/openconfig/ygot/util"
-	"github.com/openconfig/ygot/ygen"
 )
 
 // Constants defining the defaults for Protobuf package generation. These constants
@@ -45,10 +45,10 @@ const (
 	DefaultEnumPackageName = "enums"
 	// DefaultYwrapperPath defines the default import path for the ywrapper.proto file,
 	// excluding the filename.
-	DefaultYwrapperPath = "github.com/openconfig/ygot/proto/ywrapper"
+	DefaultYwrapperPath = "github.com/lyckety/ygot/proto/ywrapper"
 	// DefaultYextPath defines the default import path for the yext.proto file, excluding
 	// the filename.
-	DefaultYextPath = "github.com/openconfig/ygot/proto/yext"
+	DefaultYextPath = "github.com/lyckety/ygot/proto/yext"
 	// ywrapperAccessor is the package accessor to the ywrapper.proto
 	// file's definitions.
 	ywrapperAccessor = "ywrapper."
@@ -1140,7 +1140,7 @@ func genListKeyProto(listPackage string, listName string, args *protoDefinitionA
 				// to be different to avoid a collision, and here we use the path of the
 				// (leafref) key field. The reason the first instance uses the resolved
 				// unionEntry is for backwards compatibility
-				// (https://github.com/openconfig/ygot/pull/610#discussion_r781510037).
+				// (https://github.com/lyckety/ygot/pull/610#discussion_r781510037).
 				path = kf.YANGDetails.Path
 			}
 			u, err := unionFieldToOneOf(fd.Name, kf, path, scalarType, args.ir.Enums, args.cfg.annotateEnumNames, args.cfg.annotateSchemaPaths)

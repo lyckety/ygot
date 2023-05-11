@@ -11,8 +11,8 @@ Imported modules were sourced from:
 package ocstructs
 
 import (
-	oc "github.com/openconfig/ygot/ypathgen/testdata/exampleoc"
-	"github.com/openconfig/ygot/ygot"
+	oc "github.com/lyckety/ygot/ypathgen/testdata/exampleoc"
+	"github.com/lyckety/ygot/ygot"
 )
 
 // Parent represents the /openconfig-simple/parent YANG schema element.
@@ -25,7 +25,7 @@ type ParentAny struct {
 	*ygot.NodePath
 }
 
-// Child (container): 
+// Child (container):
 // ----------------------------------------
 // Defining module: "openconfig-simple"
 // Instantiating module: "openconfig-simple"
@@ -41,7 +41,7 @@ func (n *Parent) Child() *Parent_Child {
 	}
 }
 
-// Child (container): 
+// Child (container):
 // ----------------------------------------
 // Defining module: "openconfig-simple"
 // Instantiating module: "openconfig-simple"

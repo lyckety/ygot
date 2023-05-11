@@ -8,9 +8,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/openconfig/ygot/genutil"
-	"github.com/openconfig/ygot/gogen"
-	"github.com/openconfig/ygot/ygen"
+	"github.com/lyckety/ygot/genutil"
+	"github.com/lyckety/ygot/gogen"
+	"github.com/lyckety/ygot/ygen"
 )
 
 // Simple test case that ensures that the end-to-end ygot pipeline works

@@ -7,10 +7,10 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/openconfig/ygot/internal/igenutil"
-	"github.com/openconfig/ygot/util"
-	"github.com/openconfig/ygot/ygen"
-	"github.com/openconfig/ygot/ygot"
+	"github.com/lyckety/ygot/internal/igenutil"
+	"github.com/lyckety/ygot/util"
+	"github.com/lyckety/ygot/ygen"
+	"github.com/lyckety/ygot/ygot"
 )
 
 // CodeGenerator is a structure that is used to pass arguments as to

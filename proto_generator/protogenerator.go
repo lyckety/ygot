@@ -26,10 +26,10 @@ import (
 	"strings"
 
 	log "github.com/golang/glog"
+	"github.com/lyckety/ygot/genutil"
+	"github.com/lyckety/ygot/protogen"
+	"github.com/lyckety/ygot/ygen"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/genutil"
-	"github.com/openconfig/ygot/protogen"
-	"github.com/openconfig/ygot/ygen"
 )
 
 var (

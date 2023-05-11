@@ -20,7 +20,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/openconfig/ygot/ygot"
+	"github.com/lyckety/ygot/ygot"
 )
 
 // flattenOCJSON outputs all leaf path-value pairs in the root per RFC7951.

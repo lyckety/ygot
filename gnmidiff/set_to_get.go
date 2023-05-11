@@ -5,8 +5,8 @@ import (
 	"reflect"
 
 	"github.com/derekparker/trie"
+	"github.com/lyckety/ygot/ytypes"
 	gpb "github.com/openconfig/gnmi/proto/gnmi"
-	"github.com/openconfig/ygot/ytypes"
 )
 
 // SetToNotifsDiff contains the difference from the SetRequest to the given Notifications.

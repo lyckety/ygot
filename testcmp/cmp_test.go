@@ -18,12 +18,12 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
+	"github.com/lyckety/ygot/exampleoc"
+	"github.com/lyckety/ygot/testutil"
+	"github.com/lyckety/ygot/uexampleoc"
+	"github.com/lyckety/ygot/ygot"
+	"github.com/lyckety/ygot/ytypes"
 	"github.com/openconfig/gnmi/errdiff"
-	"github.com/openconfig/ygot/exampleoc"
-	"github.com/openconfig/ygot/testutil"
-	"github.com/openconfig/ygot/uexampleoc"
-	"github.com/openconfig/ygot/ygot"
-	"github.com/openconfig/ygot/ytypes"
 	"google.golang.org/protobuf/testing/protocmp"
 
 	gnmipb "github.com/openconfig/gnmi/proto/gnmi"

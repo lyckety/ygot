@@ -2,7 +2,7 @@
 
 This directory contains an example generated set of structs and path structs
 from a subset of the OpenConfig models. They are used within demo applications
-in the [ygot/demo](https://github.com/openconfig/ygot/tree/master/demo)
+in the [ygot/demo](https://github.com/lyckety/ygot/tree/master/demo)
 directory.
 
 This package **WILL** change without warning, and **SHOULD NOT** be imported

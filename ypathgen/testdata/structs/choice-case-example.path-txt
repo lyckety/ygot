@@ -11,7 +11,7 @@ Imported modules were sourced from:
 package ocstructs
 
 import (
-	"github.com/openconfig/ygot/ygot"
+	"github.com/lyckety/ygot/ygot"
 )
 
 // ChoiceCaseAnonymousCasePath represents the /choice-case-example/choice-case-anonymous-case YANG schema element.
@@ -44,7 +44,7 @@ type ChoiceCaseAnonymousCase_BPathAny struct {
 	*ygot.NodePath
 }
 
-// A (leaf): 
+// A (leaf):
 // ----------------------------------------
 // Defining module: "choice-case-example"
 // Instantiating module: "choice-case-example"
@@ -60,7 +60,7 @@ func (n *ChoiceCaseAnonymousCasePath) A() *ChoiceCaseAnonymousCase_APath {
 	}
 }
 
-// A (leaf): 
+// A (leaf):
 // ----------------------------------------
 // Defining module: "choice-case-example"
 // Instantiating module: "choice-case-example"
@@ -76,7 +76,7 @@ func (n *ChoiceCaseAnonymousCasePathAny) A() *ChoiceCaseAnonymousCase_APathAny {
 	}
 }
 
-// B (leaf): 
+// B (leaf):
 // ----------------------------------------
 // Defining module: "choice-case-example"
 // Instantiating module: "choice-case-example"
@@ -92,7 +92,7 @@ func (n *ChoiceCaseAnonymousCasePath) B() *ChoiceCaseAnonymousCase_BPath {
 	}
 }
 
-// B (leaf): 
+// B (leaf):
 // ----------------------------------------
 // Defining module: "choice-case-example"
 // Instantiating module: "choice-case-example"
@@ -138,7 +138,7 @@ type ChoiceCaseWithLeafref_ReferencedPathAny struct {
 	*ygot.NodePath
 }
 
-// Ptr (leaf): 
+// Ptr (leaf):
 // ----------------------------------------
 // Defining module: "choice-case-example"
 // Instantiating module: "choice-case-example"
@@ -154,7 +154,7 @@ func (n *ChoiceCaseWithLeafrefPath) Ptr() *ChoiceCaseWithLeafref_PtrPath {
 	}
 }
 
-// Ptr (leaf): 
+// Ptr (leaf):
 // ----------------------------------------
 // Defining module: "choice-case-example"
 // Instantiating module: "choice-case-example"
@@ -170,7 +170,7 @@ func (n *ChoiceCaseWithLeafrefPathAny) Ptr() *ChoiceCaseWithLeafref_PtrPathAny {
 	}
 }
 
-// Referenced (leaf): 
+// Referenced (leaf):
 // ----------------------------------------
 // Defining module: "choice-case-example"
 // Instantiating module: "choice-case-example"
@@ -186,7 +186,7 @@ func (n *ChoiceCaseWithLeafrefPath) Referenced() *ChoiceCaseWithLeafref_Referenc
 	}
 }
 
-// Referenced (leaf): 
+// Referenced (leaf):
 // ----------------------------------------
 // Defining module: "choice-case-example"
 // Instantiating module: "choice-case-example"
@@ -212,7 +212,7 @@ func DeviceRoot(id string) *DevicePath {
 	return &DevicePath{ygot.NewDeviceRootBase(id)}
 }
 
-// ChoiceCaseAnonymousCase (container): 
+// ChoiceCaseAnonymousCase (container):
 // ----------------------------------------
 // Defining module: "choice-case-example"
 // Instantiating module: "choice-case-example"
@@ -228,7 +228,7 @@ func (n *DevicePath) ChoiceCaseAnonymousCase() *ChoiceCaseAnonymousCasePath {
 	}
 }
 
-// ChoiceCaseWithLeafref (container): 
+// ChoiceCaseWithLeafref (container):
 // ----------------------------------------
 // Defining module: "choice-case-example"
 // Instantiating module: "choice-case-example"
@@ -244,7 +244,7 @@ func (n *DevicePath) ChoiceCaseWithLeafref() *ChoiceCaseWithLeafrefPath {
 	}
 }
 
-// SimpleChoiceCase (container): 
+// SimpleChoiceCase (container):
 // ----------------------------------------
 // Defining module: "choice-case-example"
 // Instantiating module: "choice-case-example"
@@ -290,7 +290,7 @@ type SimpleChoiceCase_BPathAny struct {
 	*ygot.NodePath
 }
 
-// A (leaf): 
+// A (leaf):
 // ----------------------------------------
 // Defining module: "choice-case-example"
 // Instantiating module: "choice-case-example"
@@ -306,7 +306,7 @@ func (n *SimpleChoiceCasePath) A() *SimpleChoiceCase_APath {
 	}
 }
 
-// A (leaf): 
+// A (leaf):
 // ----------------------------------------
 // Defining module: "choice-case-example"
 // Instantiating module: "choice-case-example"
@@ -322,7 +322,7 @@ func (n *SimpleChoiceCasePathAny) A() *SimpleChoiceCase_APathAny {
 	}
 }
 
-// B (leaf): 
+// B (leaf):
 // ----------------------------------------
 // Defining module: "choice-case-example"
 // Instantiating module: "choice-case-example"
@@ -338,7 +338,7 @@ func (n *SimpleChoiceCasePath) B() *SimpleChoiceCase_BPath {
 	}
 }
 
-// B (leaf): 
+// B (leaf):
 // ----------------------------------------
 // Defining module: "choice-case-example"
 // Instantiating module: "choice-case-example"

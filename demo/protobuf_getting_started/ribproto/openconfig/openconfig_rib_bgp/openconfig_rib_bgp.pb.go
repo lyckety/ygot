@@ -15,9 +15,9 @@
 package openconfig_rib_bgp
 
 import (
-	enums "github.com/openconfig/ygot/demo/protobuf_getting_started/ribproto/openconfig/enums"
-	_ "github.com/openconfig/ygot/proto/yext"
-	ywrapper "github.com/openconfig/ygot/proto/ywrapper"
+	enums "github.com/lyckety/ygot/demo/protobuf_getting_started/ribproto/openconfig/enums"
+	_ "github.com/lyckety/ygot/proto/yext"
+	ywrapper "github.com/lyckety/ygot/proto/ywrapper"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"

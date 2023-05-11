@@ -26,11 +26,11 @@ import (
 	"strings"
 
 	log "github.com/golang/glog"
+	"github.com/lyckety/ygot/genutil"
+	"github.com/lyckety/ygot/util"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/genutil"
-	"github.com/openconfig/ygot/util"
 
-	"github.com/openconfig/ygot/internal/igenutil"
+	"github.com/lyckety/ygot/internal/igenutil"
 
 	gpb "github.com/openconfig/gnmi/proto/gnmi"
 )

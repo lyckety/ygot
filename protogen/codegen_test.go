@@ -9,9 +9,9 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/openconfig/ygot/genutil"
-	"github.com/openconfig/ygot/testutil"
-	"github.com/openconfig/ygot/ygen"
+	"github.com/lyckety/ygot/genutil"
+	"github.com/lyckety/ygot/testutil"
+	"github.com/lyckety/ygot/ygen"
 )
 
 const (

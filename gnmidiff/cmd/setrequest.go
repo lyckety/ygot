@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/openconfig/ygot/gnmidiff"
-	"github.com/openconfig/ygot/gnmidiff/gnmiparse"
+	"github.com/lyckety/ygot/gnmidiff"
+	"github.com/lyckety/ygot/gnmidiff/gnmiparse"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 )

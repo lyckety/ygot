@@ -21,7 +21,7 @@ import (
 	"strings"
 
 	"github.com/kylelemons/godebug/pretty"
-	"github.com/openconfig/ygot/util"
+	"github.com/lyckety/ygot/util"
 	"google.golang.org/protobuf/proto"
 
 	gnmipb "github.com/openconfig/gnmi/proto/gnmi"

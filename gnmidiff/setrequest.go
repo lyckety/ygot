@@ -21,8 +21,8 @@ import (
 	"strings"
 
 	"github.com/derekparker/trie"
-	"github.com/openconfig/ygot/ygot"
-	"github.com/openconfig/ygot/ytypes"
+	"github.com/lyckety/ygot/ygot"
+	"github.com/lyckety/ygot/ytypes"
 
 	gpb "github.com/openconfig/gnmi/proto/gnmi"
 )

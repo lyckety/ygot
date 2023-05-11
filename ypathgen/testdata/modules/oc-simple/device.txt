@@ -11,7 +11,7 @@ Imported modules were sourced from:
 package device
 
 import (
-	"github.com/openconfig/ygot/ygot"
+	"github.com/lyckety/ygot/ygot"
 	"example.com/openconfigsimplepath"
 )
 
@@ -42,7 +42,7 @@ func (n *DevicePath) Parent() *openconfigsimplepath.ParentPath {
 	}
 }
 
-// RemoteContainer (container): 
+// RemoteContainer (container):
 // ----------------------------------------
 // Defining module: "openconfig-remote"
 // Instantiating module: "openconfig-simple"

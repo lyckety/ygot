@@ -7,7 +7,7 @@ import (
 	"testing"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/openconfig/ygot/ygot"
+	"github.com/lyckety/ygot/ygot"
 	"google.golang.org/protobuf/encoding/prototext"
 
 	gnmipb "github.com/openconfig/gnmi/proto/gnmi"

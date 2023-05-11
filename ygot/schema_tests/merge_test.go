@@ -18,8 +18,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	oc "github.com/openconfig/ygot/exampleoc"
-	"github.com/openconfig/ygot/ygot"
+	oc "github.com/lyckety/ygot/exampleoc"
+	"github.com/lyckety/ygot/ygot"
 )
 
 func TestMergeEmptyMap(t *testing.T) {

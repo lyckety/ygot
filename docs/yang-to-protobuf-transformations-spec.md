@@ -1,8 +1,8 @@
 ## YANG to Protobuf: Transformation Specification
 
-**Revision:**: 1.1.0  
-**Published**: September 2017   
-**Contributors**: robjs<sup>†</sup> (ed), aashaikh<sup>†</sup>, kevingrant<sup>†</sup>, hines<sup>†</sup>, csl<sup>†</sup>, wmohsin<sup>†</sup>, aghaffar<sup>†</sup>, tmadejski<sup>†</sup>  
+**Revision:**: 1.1.0
+**Published**: September 2017
+**Contributors**: robjs<sup>†</sup> (ed), aashaikh<sup>†</sup>, kevingrant<sup>†</sup>, hines<sup>†</sup>, csl<sup>†</sup>, wmohsin<sup>†</sup>, aghaffar<sup>†</sup>, tmadejski<sup>†</sup>
 <small><sup>†</sup> @google.com</small>
 
 
@@ -23,7 +23,7 @@ permissive numeric type is used to store each value. See notes on protobuf field
 options below for information as to how original YANG schema information can be
 retrieved.
 
-| YANG Type               | Protobuf Type                       | Notes         | 
+| YANG Type               | Protobuf Type                       | Notes         |
 | ----------------------- | ----------------------------------- | ------------- |
 | `binary`                | `bytes` as `ywrapper.BytesValue`    | Length restrictions encoded as a field option.  |
 | `bits`                  | `enum`                              | Each value within the `enum` utilises a name of the `bit` argument to the `bits` type and the value of the bit `position`.              |
@@ -57,7 +57,7 @@ maps to a protobuf message. Such messages are contained within their own package
 dependent upon the schema path to the directory. For instance,
 `/interfaces/interface/subinterfaces/subinterface/config` is contained within a
 `openconfig_interfaces.interfaces.interface.subinterfaces.subinterface package`
-package. The [ygot](github.com/openconfig/ygot) package writes these messages
+package. The [ygot](github.com/lyckety/ygot) package writes these messages
 out in a hierarchical file structure.
 
 Messages are named by translating the name of the message into `CamelCase`
@@ -77,7 +77,7 @@ that are referenced by `identityref `leaves) these are output to a single global
 enumerations file, with the naming corresponding to their location within the
 schema, e.g., `ModuleNameIdentityName` and `ModuleNameTypedefName`. Values
 within enumerations are represented in the format of
-`UPPERCASE_WITH_UNDERSCORES`. 
+`UPPERCASE_WITH_UNDERSCORES`.
 
 
 ## Mapping of YANG Lists
@@ -90,7 +90,7 @@ turn contains:
     YANG list (not including the list keys).
 
 The motivation for this choice such that we simply support cases whereby the
-type of the key is not possible to use within a YANG map. 
+type of the key is not possible to use within a YANG map.
 
 For example:
 
@@ -99,11 +99,11 @@ For example:
 container parent {
   list foo-list {
     key "k1 k2";
-  
-    leaf k1 { type string; } 
+
+    leaf k1 { type string; }
     leaf k2 { type string; }
-    
-    leaf bar { type string; } 
+
+    leaf bar { type string; }
   }
 }
 ```
@@ -187,7 +187,7 @@ protobuf-compatible. In order that the original schema path of an entity can be
 determined, the schema is annotated with the original schema path.
 
 This annotation uses a protobuf `FieldOption` defined in
-[yext.proto](https://github.com/openconfig/ygot/blob/master/proto/yext/yext.proto).
+[yext.proto](https://github.com/lyckety/ygot/blob/master/proto/yext/yext.proto).
 The format of the option is a string specifying the complete YANG schema tree
 path (e.g., `/interfaces/interface/config/name`). In the case that a particular
 single protobuf field maps to more than one leaf in the YANG schema (possible

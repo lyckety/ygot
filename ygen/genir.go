@@ -18,10 +18,10 @@ import (
 	"fmt"
 	"sort"
 
+	"github.com/lyckety/ygot/genutil"
+	"github.com/lyckety/ygot/util"
+	"github.com/lyckety/ygot/ygot"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/genutil"
-	"github.com/openconfig/ygot/util"
-	"github.com/openconfig/ygot/ygot"
 )
 
 // IROptions contains options used to customize IR generation.

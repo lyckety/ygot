@@ -21,8 +21,8 @@ import (
 	"strings"
 	"text/template"
 
+	"github.com/lyckety/ygot/util"
 	"github.com/openconfig/goyang/pkg/yang"
-	"github.com/openconfig/ygot/util"
 
 	log "github.com/golang/glog"
 )

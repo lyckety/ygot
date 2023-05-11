@@ -25,16 +25,16 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/openconfig/ygot/testutil"
-	"github.com/openconfig/ygot/util"
-	"github.com/openconfig/ygot/ygot"
-	"github.com/openconfig/ygot/ytypes"
+	"github.com/lyckety/ygot/testutil"
+	"github.com/lyckety/ygot/util"
+	"github.com/lyckety/ygot/ygot"
+	"github.com/lyckety/ygot/ytypes"
 
+	oc "github.com/lyckety/ygot/exampleoc"
+	"github.com/lyckety/ygot/exampleoc/opstateoc"
+	woc "github.com/lyckety/ygot/exampleoc/wrapperunionoc"
+	uoc "github.com/lyckety/ygot/uexampleoc"
 	"github.com/openconfig/gnmi/errdiff"
-	oc "github.com/openconfig/ygot/exampleoc"
-	"github.com/openconfig/ygot/exampleoc/opstateoc"
-	woc "github.com/openconfig/ygot/exampleoc/wrapperunionoc"
-	uoc "github.com/openconfig/ygot/uexampleoc"
 )
 
 // To debug a schema node subtree, any of the following can be used:

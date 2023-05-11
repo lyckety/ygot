@@ -15,8 +15,8 @@
 package openconfig
 
 import (
-	openconfig_rib_bgp "github.com/openconfig/ygot/demo/protobuf_getting_started/ribproto/openconfig/openconfig_rib_bgp"
-	_ "github.com/openconfig/ygot/proto/yext"
+	openconfig_rib_bgp "github.com/lyckety/ygot/demo/protobuf_getting_started/ribproto/openconfig/openconfig_rib_bgp"
+	_ "github.com/lyckety/ygot/proto/yext"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
