@@ -74,6 +74,9 @@ func GetOrderedFieldNames(directory *Directory) []string {
 		orderedFieldNames = append(orderedFieldNames, fieldName)
 	}
 	sort.Strings(orderedFieldNames)
+
+	fmt.Println("orderedFieldNames: ", orderedFieldNames)
+
 	return orderedFieldNames
 }
 
@@ -90,6 +93,9 @@ func GoFieldNameMap(directory *ParsedDirectory) map[string]string {
 	for _, fName := range directory.OrderedFieldNames() {
 		uniqueNameMap[fName] = genutil.MakeNameUnique(directory.Fields[fName].Name, uniqueGenFieldNames)
 	}
+
+	fmt.Println("uniqueNameMap: ", uniqueNameMap)
+
 	return uniqueNameMap
 }
 

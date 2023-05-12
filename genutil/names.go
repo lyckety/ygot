@@ -103,8 +103,11 @@ func MakeNameUnique(name string, definedNames map[string]bool) string {
 // field. The returned name is not guaranteed to be unique within any context.
 func EntryCamelCaseName(e *yang.Entry) string {
 	if name, ok := CamelCaseNameExt(e.Exts); ok {
+		fmt.Println("CamelCaseNameExt(e.Exts): ", name)
+
 		return name
 	}
+
 	return yang.CamelCase(e.Name)
 }
 

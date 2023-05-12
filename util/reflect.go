@@ -699,6 +699,8 @@ func forEachFieldInternal(ni *NodeInfo, in, out interface{}, iterFunction FieldI
 			}
 
 			for _, p := range ps {
+				fmt.Println("ni.Schema: ", ni.Schema)
+
 				nn.Schema = FirstChild(ni.Schema, p)
 				if nn.Schema == nil {
 					e := fmt.Errorf("forEachFieldInternal could not find child schema with path %v from schema name %s", p, ni.Schema.Name)
